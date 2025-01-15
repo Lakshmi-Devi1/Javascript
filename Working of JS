@@ -1,1 +1,35 @@
-Working of javascript internal
+Working of javascript internally:
+### 1. **Execution Process**:
+   When you write JavaScript code, it goes through these basic steps:
+   
+   - **Parsing**: JavaScript reads your code and turns it into a structure (called an **Abstract Syntax Tree** or AST) that it can understand.
+   - **Compilation/Interpretation**: The JavaScript engine either converts your code into machine code (like **V8** in Chrome) or reads it line-by-line for execution.
+   - **Execution**: Finally, the code runs, and the browser or Node.js performs the tasks you've coded.
+
+### 2. **Key Concepts in Execution**:
+
+- **Call Stack**: Think of it as a to-do list. When a function is called, it's added to the list (stack). When it's done, it's removed. This helps JavaScript keep track of what it's doing.
+  
+- **Event Loop**: This manages all **asynchronous tasks** (like fetching data, waiting for a timer, etc.). It makes sure tasks like data fetching or waiting for a button click don't block other code from running. When the code is done, the event loop moves those tasks to the stack.
+
+- **Memory**: JavaScript stores variables and objects in **memory**. Once something is no longer needed, the engine automatically deletes it (this process is called **garbage collection**).
+
+### 3. **Important Features**:
+
+- **Closure**: When a function is defined inside another function, it can still remember and use the variables from the outer function. This is called a **closure**.
+  
+- **Hoisting**: Variables and function declarations are moved to the top of their scope (e.g., a function can be called before it's written in the code due to hoisting).
+
+- **Asynchronous JavaScript**: JavaScript can do multiple things at once (without blocking the code) using things like:
+   - **Callbacks**: Functions that are called later (after an event or data is ready).
+   - **Promises**: Represent a value that will eventually be available.
+   - **Async/Await**: A cleaner way to deal with asynchronous code using **Promises**.
+
+### 4. **Garbage Collection**:
+   JavaScript automatically cleans up memory that is no longer needed by removing objects that aren't being used anymore. This process is **garbage collection**.
+
+### Summary:
+- JavaScript works by **parsing** and **compiling** code.
+- It uses a **call stack** to handle function calls and an **event loop** for asynchronous tasks (like waiting for a button click or a server response).
+- It has features like **closures** (functions remembering variables from their surroundings) and **hoisting** (variables/functions moving to the top).
+- **Garbage collection** cleans up unused memory automatically.
