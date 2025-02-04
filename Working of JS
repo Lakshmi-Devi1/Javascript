@@ -6,7 +6,6 @@ Working of javascript internally:
    - **Compilation/Interpretation**: The JavaScript engine either converts your code into machine code (like **V8** in Chrome) or reads it line-by-line for execution.
    - **Execution**: Finally, the code runs, and the browser or Node.js performs the tasks you've coded.
 ### 2. **Key Concepts in Execution**:
-
 - **Call Stack**: Think of it as a to-do list. When a function is called, it's added to the list (stack). When it's done, it's removed. This helps JavaScript keep track of what it's doing.
   
 - **Event Loop**: This manages all **asynchronous tasks** (like fetching data, waiting for a timer, etc.). It makes sure tasks like data fetching or waiting for a button click don't block other code from running. When the code is done, the event loop moves those tasks to the stack.
