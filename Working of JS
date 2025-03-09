@@ -2,8 +2,11 @@ Working of javascript internally:
 ### 1. **Execution Process**:
    When you write JavaScript code, it goes through these basic steps:
    - **Parsing**: JavaScript reads your code and turns it into a structure (called an **Abstract Syntax Tree** or AST) that it can understand.
+
    - **Compilation/Interpretation**: The JavaScript engine either converts your code into machine code (like **V8** in Chrome) or reads it line-by-line for execution.
+
    - **Execution**: Finally, the code runs, and the browser or Node.js performs the tasks you've coded.
+
 ### 2. **Key Concepts in Execution**:
 - **Call Stack**: Think of it as a to-do list. When a function is called, it's added to the list (stack). When it's done, it's removed. This helps JavaScript keep track of what it's doing.
   
@@ -19,7 +22,9 @@ Working of javascript internally:
 
 - **Asynchronous JavaScript**: JavaScript can do multiple things at once (without blocking the code) using things like:
    - **Callbacks**: Functions that are called later (after an event or data is ready).
+
    - **Promises**: Represent a value that will eventually be available.
+
    - **Async/Await**: A cleaner way to deal with asynchronous code using **Promises**.
 
 ### 4. **Garbage Collection**:
